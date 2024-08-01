@@ -1,0 +1,17 @@
+.footer-container {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  .social {
+    width: 100%;
+    text-align: center;
+    border: 2px solid black;
+  }
+  .copyright {
+    width: 100%;
+    text-align: center;
+    border: 2px solid black;
+  }
+}
