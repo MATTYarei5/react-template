@@ -1,0 +1,51 @@
+.cards {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  width: 350px;
+  position: relative;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  .details {
+    margin-left: 125px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 18px;
+      color: rgb(138, 138, 138);
+    }
+
+    .discription {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: white;
+      border-radius: 8px;
+      font-size: 20px;
+      color: rgb(138, 138, 138);
+      border-top: 1px solid lightgrey;
+    }
+  }
+}

@@ -1,21 +1,15 @@
-import "./App.css";
+import "./styles/main.scss";
+import Data from "./components/Data";
+import ProfileCard from "./components/ProfileCard";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="card-container">
+        {Data.map((profile) => (
+          <ProfileCard key={profile.id} profile={profile} />
+        ))}
+      </div>
     </div>
   );
 }
