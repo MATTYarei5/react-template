@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const GreetingToggle = () => {
   const [greeting, setGreeting] = useState(true);
-  const toggleButton = () => setGreeting(greeting);
+  const toggleButton = () => setGreeting((prevState) => !prevState);
 
   return (
     <div className="greeting">
