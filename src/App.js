@@ -1,21 +1,18 @@
 import "./App.css";
 
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Users from "./components/Users";
+import User from "./components/User";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={Users} />
+          <Route path="/user/:id" component={User} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
