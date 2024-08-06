@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const CounterWidget = () => {
   const [count, setCount] = useState(1);

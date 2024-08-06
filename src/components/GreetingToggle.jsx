@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const GreetingToggle = () => {
   const [greeting, setGreeting] = useState(true);
