@@ -13,7 +13,7 @@ const FontSize = () => {
 
   return (
     <div>
-      <h2 style={{ size: `${size}px` }}>Resize Me</h2>
+      <h2 style={{ fontSize: `${size}px` }}>Resize Me</h2>
       <button onClick={bigger}>+</button>
       <button onClick={smaller}>-</button>
     </div>
