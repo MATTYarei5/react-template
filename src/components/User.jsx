@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const User = ({ id }) => {
+const User = (props) => {
   const [user, setUser] = useState(null);
   const [homePlanet, setHomePlanet] = useState(null);
 
@@ -16,7 +16,8 @@ const User = ({ id }) => {
   };
 
   useEffect(() => {
-    fetch(`https://www.swapi.tech/api/people/${id}`)
+    console.log(props.match.params.id);
+    fetch(`https://www.swapi.tech/api/people/${props.match.params.id}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -25,7 +26,7 @@ const User = ({ id }) => {
       .catch((err) => {
         console.error("Error fetching user data: ", err);
       });
-  }, [id]);
+  }, []);
 
   return (
     <div>
