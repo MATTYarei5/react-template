@@ -1,23 +1,34 @@
-import "./App.css";
+import { useState, useRef } from "react";
 
-function App() {
+export default function VideoPlayer() {
+  const [playing, setPlaying] = useState(false);
+  const ref = useRef(null);
+
+  function handleClick() {
+    const nextPlaying = !playing;
+    setPlaying(nextPlaying);
+
+    if (nextPlaying) {
+      ref.current.play();
+    } else {
+      ref.current.pause();
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <video
+        width="250"
+        ref={ref}
+        onPlay={() => setPlaying(true)}
+        onPause={() => setPlaying(false)}
+      >
+        <source
+          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <button onClick={handleClick}>{playing ? "Pause" : "Play"}</button>
+    </>
   );
 }
-
-export default App;
