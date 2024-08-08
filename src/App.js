@@ -8,6 +8,8 @@ import HideToggle from "./components/HideToggle";
 import FontSize from "./components/FontSize";
 import AlignText from "./components/AlignText";
 import ClockWidget from "./components/ClockWidget";
+import ColorChangeWidget from "./components/ColorChangeWidget";
+import SliderWidget from "./components/SliderWidget";
 
 function App() {
   const [isClockMounted, setIsClockMounted] = useState(true);
@@ -27,6 +29,8 @@ function App() {
       <button onClick={toggleClock}>
         {isClockMounted ? "Unmount Clock" : "Mount Clock"}
       </button>
+      <ColorChangeWidget />
+      <SliderWidget />
     </div>
   );
 }
