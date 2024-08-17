@@ -1,8 +1,7 @@
 @import 'variables';
 @import 'mixins';
-@import '../components/Header/Header.scss';
-@import '../components/Footer/Footer.scss';
-// Import other component styles here
+@import '../styles/header.scss';
+@import '../styles/footer.scss';
 
 body {
   font-family: Arial, sans-serif;
