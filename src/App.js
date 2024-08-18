@@ -18,8 +18,8 @@ function App() {
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/products" exact component={Products} />
-        <Route path="/products/:id" component={ProductDetail} />
+        <Route path="/products" component={Products} />
+        {/* <Route path="/products/:id" component={ProductDetail} /> */}
         <Route path="/cart" component={Cart} />
         <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />

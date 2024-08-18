@@ -4,10 +4,16 @@
 @import '../styles/footer.scss';
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
 
-body {
+body, html {
+  height: 100%;
+  width: 100%;
   font-family: "Rubik Wet Paint", system-ui;
   margin: 0;
   padding: 0;
+}
+#root{
+  height: 100%;
+  width: 100%;
 }
 
 a {

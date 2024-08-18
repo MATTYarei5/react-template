@@ -6,9 +6,7 @@ function Home() {
   return (
     <div className="home">
       <h4>The best place for your new school drip</h4>
-      <div className="hero" style={{ backgroundImage: `url(${nuskool})` }}>
-        
-      </div>
+      <img className="hero" src={nuskool} alt="hero" />
     </div>
   );
 }

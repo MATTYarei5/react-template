@@ -4,7 +4,7 @@ import '..//../styles/footer.scss';
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; 2024 NuSkool Fake address, (123)123-1234</p>
+      <p>2024 NuSkool 123 Fake St. UT, (123)123-1234</p>
     </footer>
   );
 }
