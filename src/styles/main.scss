@@ -2,9 +2,10 @@
 @import 'mixins';
 @import '../styles/header.scss';
 @import '../styles/footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Rubik Wet Paint", system-ui;
   margin: 0;
   padding: 0;
 }

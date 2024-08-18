@@ -5,9 +5,6 @@ import '..//../styles/header.scss';
 function Header() {
   return (
     <header className="header">
-      <div className="logo">
-        <Link to="/">E-Shop</Link>
-      </div>
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
