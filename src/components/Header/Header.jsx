@@ -6,13 +6,11 @@ function Header() {
   return (
     <header className="header">
       <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/products">Products</Link></li>
-          <li><Link to="/cart">Cart</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/about">About</Link></li>
-        </ul>
+          <p><Link to="/">Home</Link></p>
+          <p><Link to="/products">Products</Link></p>
+          <p><Link to="/cart">Cart</Link></p>
+          <p><Link to="/contact">Contact</Link></p>
+          <p><Link to="/about">About</Link></p>
       </nav>
     </header>
   );
