@@ -8,30 +8,8 @@
         font-size: 28px;
     }
     .hero {
-        height: 728px;
+        height: 702px;
         width: 70%;
         padding: 0 15%;
     }
-  }
-
-  @media (max-width: 768px) {
-    p {
-      font-size: 20px;
-
-    .hero {
-      height: auto;
-      width: 100%;
-      padding: 0 10%;
-    }
-  }
-
-  @media (max-width: 480px) {
-    p {
-      font-size: 18px;
-    }
-
-    .hero {
-      padding: 0 5%;
-    }
-  }
 }

@@ -5,13 +5,21 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
   
     h1 {
       text-align: center;
       margin-bottom: 20px;
     }
   
-    .form-group {
+    .formGroup {
+      width: 100%;
       margin-bottom: 20px;
   
       label {
@@ -42,6 +50,7 @@
       cursor: pointer;
       font-size: 16px;
       transition: background-color 0.3s;
+      margin: 0 auto;
   
       &:hover {
         background-color: gray;

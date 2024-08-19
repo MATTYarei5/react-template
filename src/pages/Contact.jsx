@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import '../styles/contact.scss';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -53,7 +52,7 @@ function Contact() {
     <div className="contact">
       <h1>Contact Us</h1>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className="formGroup">
           <label htmlFor="firstName">First Name *</label>
           <input
             type="text"
@@ -65,7 +64,7 @@ function Contact() {
           {formErrors.firstName && <p className="error">{formErrors.firstName}</p>}
         </div>
 
-        <div className="form-group">
+        <div className="formGroup">
           <label htmlFor="lastName">Last Name *</label>
           <input
             type="text"
@@ -77,7 +76,7 @@ function Contact() {
           {formErrors.lastName && <p className="error">{formErrors.lastName}</p>}
         </div>
 
-        <div className="form-group">
+        <div className="formGroup">
           <label htmlFor="email">Email *</label>
           <input
             type="email"
@@ -89,7 +88,7 @@ function Contact() {
           {formErrors.email && <p className="error">{formErrors.email}</p>}
         </div>
 
-        <div className="form-group">
+        <div className="formGroup">
           <label htmlFor="message">Message *</label>
           <textarea
             id="message"

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/home.scss';
 import nuskool from '../assets/nuskool.jpg';
 
 function Home() {
