@@ -17,7 +17,6 @@ export default function Products() {
       {products?.map(product => (
         <ProductCard key={product.id} product={product} />
       ))}
-      <button onClick={()=> console.log(products)}>Click</button>
     </div>
   );
 }

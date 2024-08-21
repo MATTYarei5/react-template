@@ -20,7 +20,7 @@ export default function ProductCard({ product }) {
     return (
         <div className='card'>
             <img src={product.image} />
-            <h6>{product.title}</h6>
+            <p>{product.title}</p>
             <p>{product.price}</p>
             <div className='quantityControl'>
                 <button onClick={addQuantity}>+</button>
