@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { CartProvider } from './components/Cart/CartContext';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
@@ -18,8 +19,8 @@ function App() {
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/products" component={Products} />
-        {/* <Route path="/products/:id" component={ProductDetail} /> */}
+        <Route exact path="/products" component={Products} />
+        <Route path="/products/:id" component={ProductDetail} />
         <Route path="/cart" component={Cart} />
         <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />

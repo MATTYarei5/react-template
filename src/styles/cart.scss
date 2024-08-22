@@ -1,0 +1,32 @@
+.cart {
+  display: flex;
+  padding: 20px;
+  background-color: #f8f9fa;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+      img {
+        width: 100px;
+        height: auto;
+        border-radius: 5px;
+        margin-right: 20px;
+      }
+  
+        p {
+          font-size: 18px;
+          margin-bottom: 5px;
+          color: #666;
+        }
+      }
+    }
+  

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import ProductCard from '../components/ProductCard/ProductCard';
+import { Link } from 'react-router-dom';
 
 export default function Products() {
 
@@ -10,12 +11,14 @@ export default function Products() {
       .then(res=>res.json())
       .then((data) => setProducts(data))
      
-  })
+  },[])
 
   return (
     <div className="products">
       {products?.map(product => (
-        <ProductCard key={product.id} product={product} />
+        <Link className='cardDetail' to={`/products/${product.id}`}>
+          <ProductCard key={product.id} product={product} />
+        </Link>
       ))}
     </div>
   );

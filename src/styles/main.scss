@@ -8,6 +8,8 @@
 @import '../styles/notFound.scss';
 @import '../styles/about.scss';
 @import '../styles/product.scss';
+@import '../styles/productDetails.scss';
+@import '../styles/cart.scss';
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
 
 @import '../styles/media-queries/mainMedia.scss';
@@ -20,6 +22,7 @@ body, html {
   padding: 0;
   background-color: lightgrey;
 }
+
 #root{
   height: 100%;
   width: 100%;

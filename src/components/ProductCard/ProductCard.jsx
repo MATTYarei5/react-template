@@ -1,33 +1,17 @@
-import { useState } from 'react';
+import { useContext } from 'react';
+import { CartContext } from '../Cart/CartContext';
 
-export default function ProductCard({ product }) {
-    const[quantity, setQuantity] =  useState(0);
-
-    const addQuantity = () => {
-        setQuantity(quantity + 1);
-    };
-
-    const subQuantity = () => {
-        if (quantity > 0) {
-            setQuantity(quantity - 1);
-        }
-    };
-
-    const addToCart = () => {
-
-    };
+export default function ProductCard(props) {
+  const { addToCart } = useContext(CartContext);
 
     return (
         <div className='card'>
-            <img src={product.image} />
-            <p>{product.title}</p>
-            <p>{product.price}</p>
-            <div className='quantityControl'>
-                <button onClick={addQuantity}>+</button>
-                <span>{quantity}</span>
-                <button onClick={subQuantity}>-</button>
+            <img src={props.product.image} />
+            <p>{props.product.title}</p>
+            <p>{props.product.price}</p>
+            <div>
+                <button className='addCartButton' onClick={addToCart}>Add to Cart</button>
             </div>
-            <button className='addCartButton' onClick={addToCart}>Add to Cart</button>
         </div>
     );
 }
