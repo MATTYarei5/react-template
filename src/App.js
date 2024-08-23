@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { CartProvider } from './components/Cart/CartContext';
+
+import ProductDetail from './pages/ProductDetail';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Home from './pages/Home';
 import Products from './pages/Products';
-import ProductDetail from './pages/ProductDetail';
-import Cart from './pages/Cart';
+import NotFound from './pages/NotFound';
 import Contact from './pages/Contact';
 import About from './pages/About';
-import NotFound from './pages/NotFound';
+import Cart from './pages/Cart';
+import Home from './pages/Home';
 
 import './styles/main.scss';
 
