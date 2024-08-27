@@ -14,7 +14,6 @@ export default function Cart() {
   return (
     <div className="cart">
       <h1>Your Cart</h1>
-      {console.log(cart)}
       {cart.length === 0 ? (
         <p>Your cart is empty</p>
       ) : (

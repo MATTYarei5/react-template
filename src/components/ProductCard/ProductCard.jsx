@@ -7,6 +7,7 @@ export default function ProductCard(props) {
   const { addToCart, cart } = useContext(CartContext);
 
   const cartItem = cart.find(item => item.id === props.product.id);
+  const quantity = cartItem ? cartItem.quantity : 0;
 
     return (
         <div className='card'>
@@ -15,7 +16,7 @@ export default function ProductCard(props) {
             <p>{props.product.title}</p>
             <p>{props.product.price}</p>
             </Link>
-            {cartItem?.quantity > 0 ? (<AddSubButton item={props.product} />
+            {quantity > 0 ? (<AddSubButton item={cartItem} />
             ) : (
             <button className='addCartButton' onClick={() =>{addToCart(props.product)}}>Add to Cart</button>
             )}
