@@ -10,9 +10,11 @@ import Contact from './components/pages/Contact';
 import About from './components/pages/About';
 import Cart from './components/pages/Cart';
 import Home from './components/pages/Home';
+import icons from './assets/icons/icon';
 
 import './styles/main.scss';
 
+icons()
 function App() {
   return (
     <BrowserRouter>

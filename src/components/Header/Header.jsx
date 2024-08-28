@@ -1,10 +1,17 @@
-import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Header() {
+
+  const [isMobile, setIsMobile] = useState(false)
+
   return (
     <header className="header">
-      <nav>
+      <button className='hamburger' onClick={() => setIsMobile(prevState => !prevState)}>
+      <FontAwesomeIcon icon='fa-solid fa-bars' />
+      </button>
+      <nav className={isMobile ? 'mobile-nav': ''}>
           <p><Link to="/">Home</Link></p>
           <p><Link to="/products">Products</Link></p>
           <p><Link to="/cart">Cart</Link></p>

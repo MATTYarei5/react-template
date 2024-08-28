@@ -1,14 +1,36 @@
 @media (max-width: 768px) {
     .header {
+      background-color: black;
+
+      .hamburger {
+        display: block;
+      }
       nav {
+        top: 40px;
+        display: none;
         font-size: 20px;
+        position: absolute;
+        z-index: 1;
+
+        a {
+          color: white;
+          margin-left: 6px;
+        }
+    }
+
+    .mobile-nav {
+      display: block;
+      
     }
 }
 
 @media (max-width: 480px) {
     .header {
+      .hamburger {
+        display: block;
+      }
+      
         nav {
-          display: flex;
           font-size: 16px;
           gap: 10px;
         }

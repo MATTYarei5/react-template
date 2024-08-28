@@ -2,13 +2,14 @@
     display: flex;
     justify-content: center;
     gap: 5px;
-
+    
     select {
         background-color: black;
         color: white;
         text-align: center;
         border-radius: 5px;
         box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
     }
 }
 
@@ -50,6 +51,7 @@
                 color: white;
                 border-radius: 5px;
                 box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+                cursor: pointer;
             }
 
             .add-sub-button {
@@ -58,6 +60,7 @@
                     color: white;
                     border-radius: 5px;
                     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+                    cursor: pointer;
                 }
 
                 span {
