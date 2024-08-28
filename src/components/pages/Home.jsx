@@ -1,5 +1,5 @@
 import React from 'react';
-import nuskool from '../assets/nuskool.jpg';
+import nuskool from '../../assets/nuskool.jpg';
 
 function Home() {
   return (

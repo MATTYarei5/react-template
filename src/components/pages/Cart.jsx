@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import { CartContext } from '../components/Cart/CartContext';
-import AddSubButton from '../components/AddSubButton/AddSubButton';
+import { CartContext } from '../Cart/CartContext';
+import AddSubButton from '../AddSubButton/AddSubButton';
 
 export default function Cart() {
   const { cart, clearCart } = useContext(CartContext);

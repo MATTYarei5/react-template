@@ -1,7 +1,8 @@
-import { useContext } from 'react';
-import { CartContext } from '../Cart/CartContext';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+
 import AddSubButton from '../AddSubButton/AddSubButton';
+import { CartContext } from '../Cart/CartContext';
 
 export default function ProductCard(props) {
   const { addToCart, cart } = useContext(CartContext);
