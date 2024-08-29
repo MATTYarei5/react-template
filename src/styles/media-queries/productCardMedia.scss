@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+  .filter-sort-options select {
+    margin-top: 5px;
+  }
+
+  .products {
+    .card {
+      width: 40%;
+    }
+  }  
+}
+
+@media (max-width: 620px) {
+  
+  .products {
+    .card {
+      width: 75%;
+    }
+  }
+}

@@ -11,15 +11,16 @@
         font-size: 20px;
         position: absolute;
         z-index: 1;
-
+        
         a {
-          color: white;
-          margin-left: 6px;
+          color: red;
+          margin: 0 6px;
         }
-    }
-
-    .mobile-nav {
-      display: block;
+      }
+      
+      .mobile-nav {
+        display: block;
+        background-color: black;
       
     }
 }
